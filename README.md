@@ -1,2 +1,2 @@
-# strv_playwright_python
-Playwright python test automation framework for STRV web
+# STRV Playwright Python BDD
+Playwright Python BDD test automation framework for STRV web
