@@ -1,11 +1,10 @@
-from playwright.sync_api import Page, expect
-from pytest_bdd import scenario, given, when, then
+from playwright.sync_api import Page
+from pytest_bdd import scenario, given, then
 import pages.homepage
-from locators import homepage_locators
 
 
 @scenario('homepage.feature', 'User visits STRV homepage')
-def test_homepage_title():
+def test_check_homepage_title():
     pass
 
 

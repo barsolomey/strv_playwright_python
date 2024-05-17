@@ -1,12 +1,13 @@
-from playwright.sync_api import Page, expect
+from playwright.sync_api import Page
 from pytest_bdd import scenario, given, when, then
 import pages.homepage
 import pages.contact_page
-from locators import contactpage_locators
+
 
 @scenario('homepage.feature', 'User clicks Lets talk button')
-def test_check_lets_talk_link(page: Page):
+def test_check_letstalk_link(page: Page):
     pass
+
 
 @given('User navigates to STRV web')
 def navigate_to_homepage(page: Page):
