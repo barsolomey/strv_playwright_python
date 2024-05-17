@@ -1,6 +1,7 @@
 from playwright.sync_api import Page
 from pytest_bdd import scenario, given, then
-import pages.homepage
+import pages
+from pages import homepage
 
 
 @scenario('homepage.feature', 'User visits STRV homepage')

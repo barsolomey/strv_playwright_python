@@ -1,7 +1,7 @@
 from playwright.sync_api import Page
 from pytest_bdd import scenario, given, when, then
-import pages.homepage
-import pages.contact_page
+import pages
+from pages import homepage, contact_page
 
 
 @scenario('homepage.feature', 'User clicks Lets talk button')
