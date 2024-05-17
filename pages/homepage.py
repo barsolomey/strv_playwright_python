@@ -11,5 +11,9 @@ class HomePage:
     def navigate(self):
         self.page.goto(urls.Urls.homepage_url)
 
-    def check_lets_talk_links(self):
-        self.page.get_by_text("Let's talk")
+    def click_lets_talk_button(self):
+        self.page.get_by_role("link", name="Wave HandLET'S TALK").click()
+
+    def check_homepage_title(self, page):
+        self.page = page
+        expect(page).to_have_title(homepage_locators.HomePageLocators.homepage_title)
