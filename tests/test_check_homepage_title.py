@@ -12,7 +12,7 @@ def test_check_homepage_title():
 @given('User navigates to STRV web')
 def navigate_to_homepage(page: Page):
     homepage = pages.homepage.HomePage(page)
-    homepage.navigate()
+    homepage.navigate(page)
 
 
 @then('Title of the homepage equals STRV - Next-Level Design and Engineering Team')

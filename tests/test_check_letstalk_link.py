@@ -12,13 +12,13 @@ def test_check_letstalk_link(page: Page):
 @given('User navigates to STRV web')
 def navigate_to_homepage(page: Page):
     homepage = pages.homepage.HomePage(page)
-    homepage.navigate()
+    homepage.navigate(page)
 
 
 @when('User clicks Lets talk button')
 def click_lets_talk_button(page: Page):
     homepage = pages.homepage.HomePage(page)
-    homepage.click_lets_talk_button()
+    homepage.click_lets_talk_button(page)
 
 
 @then('User navigates to Contact page')

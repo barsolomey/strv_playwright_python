@@ -8,10 +8,12 @@ class HomePage:
         self.page = page
         self.header_text_nextlevel = homepage_locators.HomePageLocators.header_text_nextlevel
 
-    def navigate(self):
+    def navigate(self, page):
+        self.page = page
         self.page.goto(urls.Urls.homepage_url)
 
-    def click_lets_talk_button(self):
+    def click_lets_talk_button(self, page):
+        self.page = page
         self.page.get_by_role("link", name=homepage_locators.HomePageLocators.letstalk_button_wave).click()
 
     def check_homepage_title(self, page):
