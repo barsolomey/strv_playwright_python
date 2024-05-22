@@ -4,3 +4,4 @@ pydocstyle
 pytest
 trcli
 pytest_bdd
+allure-pytest-bdd
