@@ -5,11 +5,11 @@ from pages import homepage
 
 
 @scenario('homepage.feature', 'User visits STRV homepage')
-def test_check_homepage_title():
+def test_check_homepage_title_C42051():
     pass
 
 
-@given('User navigates to STRV web')
+@given('User is on STRV web homepage')
 def navigate_to_homepage(page: Page):
     homepage = pages.homepage.HomePage(page)
     homepage.navigate(page)
